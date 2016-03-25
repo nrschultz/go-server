@@ -1,23 +1,13 @@
 package game
 
 import "github.com/nrschultz/go-server/database"
+import "github.com/nrschultz/go-server/providers/shared"
 import "gopkg.in/mgo.v2/bson"
 
-type Stat struct {
-    S string        `bson:"s"`
-    V float64       `bson:"v"`
-}
-
-type CategorizedStats struct {
-    Id      bson.ObjectId   `bson:"id"`
-    Offense []Stat          `bson:"offense"`
-    Defense []Stat          `bson:"defense"`
-    General []Stat          `bson:"general"`
-}
 
 type GameAccountStats struct {
-    Player  []CategorizedStats `bson:"player"`
-    Team    []CategorizedStats `bson:"team"`
+    Player  []shared.CategorizedStats `bson:"player"`
+    Team    []shared.CategorizedStats `bson:"team"`
 }
 
 type GameAccount struct {

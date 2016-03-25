@@ -23,8 +23,10 @@ func gameStats(w http.ResponseWriter, r *http.Request) {
     params := mux.Vars(r)
     gameAccountId, _ := params["gameAccountId"]
     teamId, _ := params["teamId"]
+    statsRequested := r.FormValue("stats_requested")
+    qualifyingStat := r.FormValue("qualifying_stat")
     // m := make(map[string]string)
-    payload := game.StatPayload(gameAccountId, teamId)
+    payload := game.StatPayload(gameAccountId, teamId, statsRequested, qualifyingStat)
     // io.WriteString(w, payload)
     json.NewEncoder(w).Encode(payload)
 }
