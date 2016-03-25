@@ -21,12 +21,13 @@ func count(w http.ResponseWriter, r *http.Request) {
 
 func gameStats(w http.ResponseWriter, r *http.Request) {
     params := mux.Vars(r)
-    gameAccountId, _ := params["gameAccountId"]
-    teamId, _ := params["teamId"]
+    gameId := params["gameId"]
+    streamId := params["streamId"]
+    teamId := params["teamId"]
     statsRequested := r.FormValue("stats_requested")
     qualifyingStat := r.FormValue("qualifying_stat")
     // m := make(map[string]string)
-    payload := game.StatPayload(gameAccountId, teamId, statsRequested, qualifyingStat)
+    payload := game.StatPayload(gameId, streamId, teamId, statsRequested, qualifyingStat)
     // io.WriteString(w, payload)
     json.NewEncoder(w).Encode(payload)
 }
@@ -34,7 +35,9 @@ func gameStats(w http.ResponseWriter, r *http.Request) {
 func main() {
     rtr := mux.NewRouter()
     rtr.HandleFunc("/count/{dbName}/{collectionName}", count)
-    rtr.HandleFunc("/stats/gameaccount/{gameAccountId}/team/{teamId}", gameStats)
+    rtr.HandleFunc("/stats/game/{gameId}/stream/{streamId}/team/{teamId}/", gameStats)
+    // rtr.HandleFunc("/stats/game/{gameId}/team/{teamId}/", gameStats)
+    // TODO: Make it work without a streamId
 
     http.Handle("/", rtr)
 

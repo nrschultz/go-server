@@ -1,0 +1,1490 @@
+{
+  "baseball": {
+    "general": [],
+    "defense": [
+      {
+        "key": "#P",
+        "abbrev": "#P",
+        "description": "Total pitches",
+        "format": "int"
+      },
+      {
+        "key": "0BBINN",
+        "abbrev": "0BBINN",
+        "description": "Zero-walk innings",
+        "format": "int"
+      },
+      {
+        "key": "123INN",
+        "abbrev": "123INN",
+        "description": " 1-2-3 Innings",
+        "format": "int"
+      },
+      {
+        "key": "1ST2OUT",
+        "abbrev": "1ST2OUT",
+        "description": "Innings with 1st 2 batters out",
+        "format": "int"
+      },
+      {
+        "key": "<13",
+        "abbrev": "<13",
+        "description": "Innings of 13 pitches or fewer",
+        "format": "int"
+      },
+      {
+        "key": "<3",
+        "abbrev": "<3",
+        "description": "Batters on or out in three pitches or less",
+        "format": "int"
+      },
+      {
+        "key": "<3%",
+        "abbrev": "<3%",
+        "description": "% of batters on or out in three pitches or less",
+        "format": "triple-dec"
+      },
+      {
+        "key": "A",
+        "abbrev": "A",
+        "description": "Assists",
+        "format": "int"
+      },
+      {
+        "key": "AB",
+        "abbrev": "ABA",
+        "description": "At Bats against",
+        "format": "int"
+      },
+      {
+        "key": "AO",
+        "abbrev": "FO",
+        "description": "Fly outs",
+        "format": "int"
+      },
+      {
+        "key": "BAA",
+        "abbrev": "BAA",
+        "description": "Opponent batting average",
+        "format": "triple-dec"
+      },
+      {
+        "key": "BB/INN",
+        "abbrev": "BB/INN",
+        "description": "Walks per inning",
+        "format": "triple-dec"
+      },
+      {
+        "key": "BB",
+        "mini_boxscore_name": "BB:pitching",
+        "abbrev": "BB",
+        "description": "Base on balls (walks)",
+        "format": "int"
+      },
+      {
+        "key": "BBS",
+        "abbrev": "BBS",
+        "description": "Walks that score",
+        "format": "int"
+      },
+      {
+        "key": "BF",
+        "abbrev": "BF",
+        "description": "Total batters faced",
+        "format": "int"
+      },
+      {
+        "key": "BK",
+        "abbrev": "BK",
+        "description": "Balks",
+        "format": "int"
+      },
+      {
+        "key": "BS",
+        "abbrev": "BS",
+        "description": "Blown saves",
+        "format": "int"
+      },
+      {
+        "key": "CB%",
+        "abbrev": "CB%",
+        "description": "Percentage of pitches thrown as Curveballs",
+        "format": "triple-dec"
+      },
+      {
+        "key": "CB",
+        "abbrev": "CB",
+        "description": "Number of pitches thrown as Curveballs",
+        "format": "int"
+      },
+      {
+        "key": "CBS%",
+        "abbrev": "CBS%",
+        "description": "Percentage of Curveballs thrown for strikes",
+        "format": "triple-dec"
+      },
+      {
+        "key": "CBS",
+        "abbrev": "CBS",
+        "description": "Number of Curveballs thrown for strikes",
+        "format": "int"
+      },
+      {
+        "key": "CH%",
+        "abbrev": "CH %",
+        "description": "Percentage of pitches thrown as Changeups",
+        "format": "triple-dec"
+      },
+      {
+        "key": "CH",
+        "abbrev": "CH",
+        "description": "Number of pitches thrown as Changeups",
+        "format": "int"
+      },
+      {
+        "key": "CHS%",
+        "abbrev": "CHS%",
+        "description": "Percentage of Changeups thrown for strikes",
+        "format": "triple-dec"
+      },
+      {
+        "key": "CHS",
+        "abbrev": "CHS",
+        "description": "Number of Changeups thrown for strikes",
+        "format": "int"
+      },
+      {
+        "key": "CI",
+        "abbrev": "CI",
+        "description": "Batter advances on catcher's interference",
+        "format": "int"
+      },
+      {
+        "key": "CI:C",
+        "abbrev": "CI",
+        "csv_export_abbrev": "cCI",
+        "description": "Batter advances on catcher's interference",
+        "format": "int"
+      },
+      {
+        "key": "CS",
+        "abbrev": "CS",
+        "description": "Runners caught stealing",
+        "format": "int"
+      },
+      {
+        "key": "CS:C",
+        "abbrev": "CS",
+        "csv_export_abbrev": "cCS",
+        "description": "Runners caught stealing",
+        "format": "int"
+      },
+      {
+        "key": "CS:C%",
+        "abbrev": "CS%",
+        "csv_export_abbrev": "cCS%",
+        "description": "Runners caught stealing percentage",
+        "format": "triple-dec"
+      },
+      {
+        "key": "CT",
+        "abbrev": "CT",
+        "description": "Number of pitches thrown as Cutters",
+        "format": "int"
+      },
+      {
+        "key": "CTS",
+        "abbrev": "CTS",
+        "description": "Number of Cutters thrown for strikes",
+        "format": "int"
+      },
+      {
+        "key": "CTS%",
+        "abbrev": "CTS%",
+        "description": "Percentage of Cutters thrown for strikes",
+        "format": "triple-dec"
+      },
+      {
+        "key": "DB%",
+        "abbrev": "DB%",
+        "description": "Percentage of pitches thrown as Dropballs",
+        "format": "triple-dec"
+      },
+      {
+        "key": "DB",
+        "abbrev": "DB",
+        "description": "Number of pitches thrown as Dropballs",
+        "format": "int"
+      },
+      {
+        "key": "DBS%",
+        "abbrev": "DBS%",
+        "description": "Percentage of Dropballs thrown for strikes",
+        "format": "triple-dec"
+      },
+      {
+        "key": "DBS",
+        "abbrev": "DBS",
+        "description": "Number of Dropballs thrown for strikes",
+        "format": "int"
+      },
+      {
+        "key": "DP",
+        "abbrev": "DP",
+        "description": "Double Plays",
+        "format": "int"
+      },
+      {
+        "key": "E",
+        "abbrev": "E",
+        "description": "Errors",
+        "format": "int"
+      },
+      {
+        "key": "ER",
+        "abbrev": "ER",
+        "description": "Earned runs allowed",
+        "format": "int"
+      },
+      {
+        "key": "ERA",
+        "abbrev": "ERA",
+        "description": "Earned run average (season)",
+        "format": "triple-dec"
+      },
+      {
+        "key": "FIP",
+        "abbrev": "FIP",
+        "description": "Fielding Independent Pitching",
+        "format": "triple-dec"
+      },
+      {
+        "key": "FB%",
+        "abbrev": "FB%",
+        "description": "Percentage of pitches thrown as Fastballs",
+        "format": "triple-dec"
+      },
+      {
+        "key": "FB",
+        "abbrev": "FB",
+        "description": "Number of pitches thrown as Fastballs",
+        "format": "int"
+      },
+      {
+        "key": "FBS%",
+        "abbrev": "FBS%",
+        "description": "Percentage of Fastballs thrown for strikes",
+        "format": "triple-dec"
+      },
+      {
+        "key": "FBS",
+        "abbrev": "FBS",
+        "description": "Number of Fastballs thrown for strikes",
+        "format": "int"
+      },
+      {
+        "key": "FLB",
+        "abbrev": "FLB",
+        "description": "Total batted balls that are fly balls",
+        "format": "int"
+      },
+      {
+        "key": "FLY%",
+        "abbrev": "FLY%",
+        "description": "% of batted balls that are hit in the air",
+        "format": "triple-dec"
+      },
+      {
+        "key": "FPCT",
+        "abbrev": "FPCT",
+        "description": "Fielding Percentage",
+        "format": "triple-dec"
+      },
+      {
+        "key": "FPS",
+        "abbrev": "FPS",
+        "description": "First pitch strikes",
+        "format": "int"
+      },
+      {
+        "key": "FPS%",
+        "abbrev": "FPS%",
+        "description": "First pitch strike percentage",
+        "format": "triple-dec"
+      },
+      {
+        "key": "FPSH",
+        "abbrev": "FPSH",
+        "description": "Number of FPS at-bats that result in a hit",
+        "format": "int"
+      },
+      {
+        "key": "FPSH%",
+        "abbrev": "FPSH%",
+        "description": "% of FPS at-bats that result in a hit",
+        "format": "triple-dec"
+      },
+      {
+        "key": "FPSO",
+        "abbrev": "FPSO",
+        "description": "Number of FPS at-bats that result in an out",
+        "format": "int"
+      },
+      {
+        "key": "FPSO%",
+        "abbrev": "FPSO%",
+        "description": "% of FPS at-bats that result in an out",
+        "format": "triple-dec"
+      },
+      {
+        "key": "FPSW",
+        "abbrev": "FPSW",
+        "description": "Number of FPS at-bats that result in a walk",
+        "format": "int"
+      },
+      {
+        "key": "FPSW%",
+        "abbrev": "FPSW%",
+        "description": "% of FPS at-bats that result in a walk",
+        "format": "triple-dec"
+      },
+      {
+        "key": "GB",
+        "abbrev": "GB",
+        "description": "Total batted balls hit on the ground",
+        "format": "int"
+      },
+      {
+        "key": "GB%",
+        "abbrev": "GB%",
+        "description": "% of all batted balls hit on the ground",
+        "format": "triple-dec"
+      },
+      {
+        "key": "GO",
+        "abbrev": "GO",
+        "description": "Ground outs",
+        "format": "int"
+      },
+      {
+        "key": "GO/AO",
+        "abbrev": "GO/FO",
+        "description": "Ratio of ground outs to fly outs",
+        "format": "triple-dec"
+      },
+      {
+        "key": "GP:C",
+        "abbrev": "GP",
+        "csv_export_abbrev": "cGP",
+        "description": "Games played by catcher",
+        "format": "int",
+        "playedKey": "catching"
+      },
+      {
+        "key": "GP:P",
+        "abbrev": "GP",
+        "description": "Games pitched",
+        "format": "int",
+        "playedKey": "pitching"
+      },
+      {
+        "key": "GP:F",
+        "abbrev": "GP",
+        "description": "Games played in the field",
+        "format": "int",
+        "playedKey": "fielding"
+      },
+      {
+        "key": "GS",
+        "abbrev": "GS",
+        "description": "Games started as the pitcher",
+        "format": "int"
+      },
+      {
+        "key": "H",
+        "mini_boxscore_name": "H:pitching",
+        "abbrev": "H",
+        "description": "Hits allowed",
+        "format": "int"
+      },
+      {
+        "key": "HARD",
+        "abbrev": "HHB",
+        "description": "Number of batted balls that are line drives or hard ground balls",
+        "format": "int"
+      },
+      {
+        "key": "HARD%",
+        "abbrev": "HHB%",
+        "description": "% of batted balls that are line drives or hard ground balls",
+        "format": "triple-dec"
+      },
+      {
+        "key": "HBP",
+        "mini_boxscore_name": "HBP:pitching",
+        "abbrev": "HBP",
+        "description": "Hit batters",
+        "format": "int"
+      },
+      {
+        "key": "HR",
+        "mini_boxscore_name": "HR:pitching",
+        "abbrev": "HR",
+        "description": "Home runs allowed",
+        "format": "int"
+      },
+      {
+        "key": "outs:C",
+        "abbrev": "INN",
+        "csv_export_abbrev": "cINN",
+        "description": "Innings caught",
+        "format": "innings-pitched"
+      },
+      {
+        "key": "K/BB",
+        "abbrev": "K/BB",
+        "description": "Strikeouts per walk",
+        "format": "triple-dec"
+      },
+      {
+        "key": "K/BF",
+        "abbrev": "K/BF",
+        "description": "Strikeouts per batter faced",
+        "format": "triple-dec"
+      },
+      {
+        "key": "K/G",
+        "abbrev": "K/G",
+        "description": "Strikeouts per regulation game",
+        "format": "triple-dec"
+      },
+      {
+        "key": "L",
+        "abbrev": "L",
+        "description": "Losses",
+        "format": "int"
+      },
+      {
+        "key": "LND",
+        "abbrev": "LND",
+        "description": "Line drives",
+        "format": "int"
+      },
+      {
+        "key": "LOB",
+        "abbrev": "LOB",
+        "description": "Runners left on base",
+        "format": "int"
+      },
+      {
+        "key": "LOBB",
+        "abbrev": "LOBB",
+        "description": "Leadoff walk (1st batter of inning)",
+        "format": "int"
+      },
+      {
+        "key": "LOBBS",
+        "abbrev": "LOBBS",
+        "description": "Leadoff walk that scored (1st batter of inning)",
+        "format": "int"
+      },
+      {
+        "key": "LOO",
+        "abbrev": "LOO",
+        "description": "Leadoff out (1st batter of inning)",
+        "format": "int"
+      },
+      {
+        "key": "OS%",
+        "abbrev": "OS%",
+        "description": "Percentage of pitches thrown Offspeed",
+        "format": "triple-dec"
+      },
+      {
+        "key": "OS",
+        "abbrev": "OS",
+        "description": "Number of pitches thrown Offspeed (Curveball, Screwball, Changeup)",
+        "format": "int"
+      },
+      {
+        "key": "OSS%",
+        "abbrev": "OSS%",
+        "description": "Percentage of Offspeed pitches thrown as strikes",
+        "format": "triple-dec"
+      },
+      {
+        "key": "OSS",
+        "abbrev": "OSS",
+        "description": "Number of pitches thrown Offspeed for strikes",
+        "format": "int"
+      },
+      {
+        "key": "P/BF",
+        "abbrev": "P/BF",
+        "description": "Pitches per batter faced",
+        "format": "triple-dec"
+      },
+      {
+        "key": "P/IP",
+        "abbrev": "P/IP",
+        "description": "Pitches per inning",
+        "format": "triple-dec"
+      },
+      {
+        "key": "PB:C",
+        "abbrev": "PB",
+        "csv_export_abbrev": "cPB",
+        "description": "Passed balls allowed",
+        "format": "int"
+      },
+      {
+        "key": "PIK",
+        "abbrev": "PIK",
+        "description": "Runners picked off",
+        "format": "int"
+      },
+      {
+        "key": "PIK:C",
+        "abbrev": "PIK",
+        "csv_export_abbrev": "cPIK",
+        "description": "Runners picked off",
+        "format": "int"
+      },
+      {
+        "key": "PO",
+        "abbrev": "PO",
+        "description": "Putouts",
+        "format": "int"
+      },
+      {
+        "key": "R",
+        "mini_boxscore_name": "R:pitching",
+        "abbrev": "R",
+        "description": "Runs allowed",
+        "format": "int"
+      },
+      {
+        "key": "RB%",
+        "abbrev": "RB%",
+        "description": "Percentage of pitches thrown as Riseballs",
+        "format": "triple-dec"
+      },
+      {
+        "key": "RB",
+        "abbrev": "RB",
+        "description": "Number of pitches thrown as Riseballs",
+        "format": "int"
+      },
+      {
+        "key": "RBS%",
+        "abbrev": "RBS%",
+        "description": "Percentage of Riseballs thrown for strikes",
+        "format": "triple-dec"
+      },
+      {
+        "key": "RBS",
+        "abbrev": "RBS",
+        "description": "Number of Riseballs thrown for strikes",
+        "format": "int"
+      },
+      {
+        "key": "S%",
+        "abbrev": "S%",
+        "description": "Strike percentage",
+        "format": "triple-dec"
+      },
+      {
+        "key": "SB%",
+        "abbrev": "SB%",
+        "description": "Opponent stolen base percentage",
+        "format": "triple-dec"
+      },
+      {
+        "key": "SB:C%",
+        "abbrev": "SB%",
+        "csv_export_abbrev": "cSB%",
+        "description": "Opponent stolen base percentage",
+        "format": "triple-dec"
+      },
+      {
+        "key": "SB",
+        "abbrev": "SB",
+        "description": "Stolen bases allowed",
+        "format": "int"
+      },
+      {
+        "key": "SB:C",
+        "abbrev": "SB",
+        "csv_export_abbrev": "cSB",
+        "description": "Stolen bases allowed",
+        "format": "int"
+      },
+      {
+        "key": "SB-SBATT:C",
+        "abbrev": "SB-ATT",
+        "csv_export_excluded": true,
+        "description": "Stolen bases allowed - Stealing attempts",
+        "format": "join",
+        "sort_stat": "SBATT:C",
+        "join_stats": [
+          "SB:C",
+          "SBATT:C"
+        ],
+        "join_with": "-"
+      },
+      {
+        "key": "SBATT:C",
+        "abbrev": "SBATT",
+        "csv_export_abbrev": "cSBATT",
+        "description": "Opponent stealing attempts",
+        "format": "int"
+      },
+      {
+        "key": "SC%",
+        "abbrev": "SC%",
+        "description": "Percentage of pitches thrown as Screwballs",
+        "format": "triple-dec"
+      },
+      {
+        "key": "SC",
+        "abbrev": "SC",
+        "description": "Number of pitches thrown as Screwballs",
+        "format": "int"
+      },
+      {
+        "key": "SCS%",
+        "abbrev": "SCS%",
+        "description": "Percentage of Screwballs thrown for strikes",
+        "format": "triple-dec"
+      },
+      {
+        "key": "SCS",
+        "abbrev": "SCS",
+        "description": "Number of Screwballs thrown for strikes",
+        "format": "int"
+      },
+      {
+        "key": "SL",
+        "abbrev": "SL",
+        "description": "Number of pitches thrown as Sliders",
+        "format": "int"
+      },
+      {
+        "key": "SLS",
+        "abbrev": "SLS",
+        "description": "Number of Sliders thrown for strikes",
+        "format": "int"
+      },
+      {
+        "key": "SLS%",
+        "abbrev": "SLS%",
+        "description": "Percentage of Sliders thrown for strikes",
+        "format": "triple-dec"
+      },
+      {
+        "key": "SM%",
+        "abbrev": "SM%",
+        "description": "% of total pitches that are swings and misses",
+        "format": "triple-dec"
+      },
+      {
+        "key": "SM",
+        "abbrev": "SM",
+        "description": "Opposing batter swings-and-misses",
+        "format": "int"
+      },
+      {
+        "key": "SO",
+        "mini_boxscore_name": "SO:pitching",
+        "abbrev": "K",
+        "description": "Strikeouts",
+        "format": "int"
+      },
+      {
+        "key": "SV",
+        "abbrev": "SV",
+        "description": "Saves",
+        "format": "int"
+      },
+      {
+        "key": "SV%",
+        "abbrev": "SV%",
+        "description": "Save percentage",
+        "format": "triple-dec"
+      },
+      {
+        "key": "SVO",
+        "abbrev": "SVO",
+        "description": "Save opportunities",
+        "format": "int"
+      },
+      {
+        "key": "SW",
+        "abbrev": "SW",
+        "description": "Total pitches batters swung at",
+        "format": "int"
+      },
+      {
+        "key": "TB",
+        "abbrev": "TB",
+        "description": "Total balls",
+        "format": "int"
+      },
+      {
+        "key": "TC",
+        "abbrev": "TC",
+        "description": "Total Chances ",
+        "format": "int"
+      },
+      {
+        "key": "TP",
+        "abbrev": "TP",
+        "description": "Triple Plays",
+        "format": "int"
+      },
+      {
+        "key": "TS",
+        "abbrev": "TS",
+        "description": "Total strikes",
+        "format": "int"
+      },
+      {
+        "key": "W",
+        "abbrev": "W",
+        "description": "Wins",
+        "format": "int"
+      },
+      {
+        "key": "WEAK",
+        "abbrev": "WHB",
+        "description": "Number of batted balls weakly hit (fly balls and ground balls)",
+        "format": "int"
+      },
+      {
+        "key": "WEAK%",
+        "abbrev": "WEAK%",
+        "description": "% of batted balls weakly hit (fly balls and ground balls)",
+        "format": "triple-dec"
+      },
+      {
+        "key": "WHIP",
+        "abbrev": "WHIP",
+        "description": "Walks plus hits per innings pitched",
+        "format": "triple-dec"
+      },
+      {
+        "key": "WP",
+        "abbrev": "WP",
+        "description": "Wild pitches",
+        "format": "int"
+      },
+      {
+        "key": "outs",
+        "abbrev": "IP",
+        "description": "Innings Pitched",
+        "format": "innings-pitched"
+      }
+    ],
+    "offense": [
+      {
+        "key": "1B",
+        "abbrev": "1B",
+        "description": "Singles",
+        "format": "int"
+      },
+      {
+        "key": "2B",
+        "abbrev": "2B",
+        "description": "Doubles",
+        "format": "int"
+      },
+      {
+        "key": "2OUTRBI",
+        "abbrev": "2OUTRBI",
+        "description": "2-out RBI",
+        "format": "int"
+      },
+      {
+        "key": "2S+3",
+        "abbrev": "2S+3",
+        "description": "Plate appearances in which batter sees 3+ pitches after 2 strikes",
+        "format": "int"
+      },
+      {
+        "key": "2S+3%",
+        "abbrev": "2S+3%",
+        "description": "% of plate appearances in which batter sees 3+ pitches after 2 strikes",
+        "format": "triple-dec"
+      },
+      {
+        "key": "C%",
+        "abbrev": "C%",
+        "description": "Contact rate",
+        "format": "triple-dec"
+      },
+      {
+        "key": "3B",
+        "abbrev": "3B",
+        "description": "Triples",
+        "format": "int"
+      },
+      {
+        "key": "6+",
+        "abbrev": "6+",
+        "description": "Plate appearances with 6+ pitches",
+        "format": "int"
+      },
+      {
+        "key": "6+%",
+        "abbrev": "6+%",
+        "description": "% of plate appearances of 6+ pitches",
+        "format": "triple-dec"
+      },
+      {
+        "key": "AB",
+        "abbrev": "AB",
+        "description": "At bats",
+        "format": "int"
+      },
+      {
+        "key": "ABRISP",
+        "abbrev": "ABRISP",
+        "description": "At bats with runners in scoring position",
+        "format": "int"
+      },
+      {
+        "key": "AB/HR",
+        "abbrev": "AB/HR",
+        "description": "At bats per home run",
+        "format": "triple-dec"
+      },
+      {
+        "key": "AVG",
+        "abbrev": "AVG",
+        "description": "Batting average (season)",
+        "format": "triple-dec"
+      },
+      {
+        "key": "BA/RISP",
+        "abbrev": "BA/RISP",
+        "description": "Batting average with runners in scoring position",
+        "format": "triple-dec"
+      },
+      {
+        "key": "HRISP",
+        "abbrev": "HRISP",
+        "description": "Hits with runners in scoring position",
+        "format": "int"
+      },
+      {
+        "key": "BB",
+        "abbrev": "BB",
+        "description": "Base on balls (walks)",
+        "format": "int"
+      },
+      {
+        "key": "BB/K",
+        "abbrev": "BB/K",
+        "description": "Walks per strikeout",
+        "format": "triple-dec"
+      },
+      {
+        "key": "CI",
+        "abbrev": "CI",
+        "description": "Batter advances on catcher's interference",
+        "format": "int"
+      },
+      {
+        "key": "CS",
+        "abbrev": "CS",
+        "description": "Caught stealing",
+        "format": "int"
+      },
+      {
+        "key": "FC",
+        "abbrev": "FC",
+        "description": "Hit into fielder's choice",
+        "format": "int"
+      },
+      {
+        "key": "GIDP",
+        "abbrev": "GIDP",
+        "description": "Hit into double play",
+        "format": "int"
+      },
+      {
+        "key": "GITP",
+        "abbrev": "GITP",
+        "description": "Hit into triple play",
+        "format": "int"
+      },
+      {
+        "key": "GP",
+        "abbrev": "GP",
+        "description": "Games played",
+        "format": "int",
+        "playedKey": "batting"
+      },
+      {
+        "key": "GSHR",
+        "abbrev": "Grand slam",
+        "description": "Grand slam home runs",
+        "format": "int"
+      },
+      {
+        "key": "H",
+        "abbrev": "H",
+        "description": "Hits",
+        "format": "int"
+      },
+      {
+        "key": "HBP",
+        "abbrev": "HBP",
+        "description": "Hit by pitch",
+        "format": "int"
+      },
+      {
+        "key": "HARD",
+        "abbrev": "HHB",
+        "description": "Hard hit balls: Total line drives and hard ground balls",
+        "format": "int"
+      },
+      {
+        "key": "HR",
+        "mini_boxscore_name": "HR",
+        "abbrev": "HR",
+        "description": "Home runs",
+        "format": "int"
+      },
+      {
+        "key": "OBP",
+        "abbrev": "OBP",
+        "description": "On-base percentage (season)",
+        "format": "triple-dec"
+      },
+      {
+        "key": "OPS",
+        "abbrev": "OPS",
+        "description": "On-base percentage plus slugging percentage (season)",
+        "format": "triple-dec"
+      },
+      {
+        "key": "PA",
+        "abbrev": "PA",
+        "description": "Plate appearances",
+        "format": "int"
+      },
+      {
+        "key": "PA/BB",
+        "abbrev": "PA/BB",
+        "description": "Plate appearances per walk",
+        "format": "triple-dec"
+      },
+      {
+        "key": "PIK",
+        "abbrev": "PIK",
+        "mini_boxscore_name": "PO",
+        "description": "Picked off",
+        "format": "int"
+      },
+      {
+        "key": "PS",
+        "abbrev": "PS",
+        "description": "Pitches seen",
+        "format": "int"
+      },
+      {
+        "key": "PS/PA",
+        "abbrev": "PS/PA",
+        "description": "Pitches seen per plate appearance",
+        "format": "triple-dec"
+      },
+      {
+        "key": "QAB",
+        "abbrev": "QAB",
+        "description": "Quality at bats (any one of: 3 pitches after 2 strikes, 6+ pitch ABs, XBH, HHB, BB, SAC Bunt, SAC Fly)",
+        "format": "int"
+      },
+      {
+        "key": "QAB%",
+        "abbrev": "QAB%",
+        "description": "Quality at bats per plate appearance",
+        "format": "percentage"
+      },
+      {
+        "key": "R",
+        "abbrev": "R",
+        "description": "Runs scored",
+        "format": "int"
+      },
+      {
+        "key": "RBI",
+        "abbrev": "RBI",
+        "description": "Runs batted in",
+        "format": "int"
+      },
+      {
+        "key": "ROE",
+        "abbrev": "ROE",
+        "description": "Reached on error",
+        "format": "int"
+      },
+      {
+        "key": "SB",
+        "abbrev": "SB",
+        "description": "Stolen bases",
+        "format": "int"
+      },
+      {
+        "key": "SB%",
+        "abbrev": "SB%",
+        "description": "Stolen base percentage",
+        "format": "triple-dec"
+      },
+      {
+        "key": "SHB",
+        "abbrev": "SAC",
+        "description": "Sacrifice hits & bunts",
+        "format": "int"
+      },
+      {
+        "key": "SHF",
+        "abbrev": "SF",
+        "description": "Sacrifice flies",
+        "format": "int"
+      },
+      {
+        "key": "SLG",
+        "abbrev": "SLG",
+        "description": "Slugging percentage",
+        "format": "triple-dec"
+      },
+      {
+        "key": "SO",
+        "mini_boxscore_name": "SO",
+        "abbrev": "K",
+        "description": "Strikeouts",
+        "format": "int"
+      },
+      {
+        "key": "SOL",
+        "abbrev": "KL",
+        "description": "Strikeouts Looking",
+        "format": "int"
+      },
+      {
+        "key": "SM",
+        "abbrev": "SM",
+        "description": "Pitches swung at and missed",
+        "format": "int"
+      },
+      {
+        "key": "SW",
+        "abbrev": "SW",
+        "description": "Pitches swung at",
+        "format": "int"
+      },
+      {
+        "key": "TS",
+        "abbrev": "TS",
+        "description": "Total strikes seen",
+        "format": "int"
+      },
+      {
+        "key": "TB",
+        "abbrev": "TB",
+        "description": "Total bases",
+        "format": "int"
+      },
+      {
+        "key": "XBH",
+        "abbrev": "XBH",
+        "description": "Extra-base hits",
+        "format": "int"
+      },
+      {
+        "key": "LOB",
+        "abbrev": "LOB",
+        "description": "Runners left on base when batter is out",
+        "format": "int"
+      },
+      {
+        "key": "3OUTLOB",
+        "abbrev": "LOB",
+        "description": "Runners left on base at the end of an inning",
+        "format": "int"
+      }
+    ]
+  },
+  "basketball": {
+    "offense": [
+      {
+        "key": "2P%",
+        "abbrev": "2P%",
+        "description": "2-Point Percentage",
+        "format": "triple-dec"
+      },
+      {
+        "key": "3P%",
+        "abbrev": "3P%",
+        "description": "3-Point Percentage",
+        "format": "triple-dec"
+      },
+      {
+        "key": "FT%",
+        "abbrev": "FT%",
+        "description": "Free Throw Percentage",
+        "format": "triple-dec"
+      },
+      {
+        "key": "eFG%",
+        "abbrev": "eFG%",
+        "description": "Effective Field Goal Percentage",
+        "link": "http://blog.gc.com/post/37191737580/effective-field-goal-percentage-and-true-shooting#eFG%25",
+        "format": "triple-dec"
+      },
+      {
+        "key": "TS%",
+        "abbrev": "TS%",
+        "description": "True Shooting Percentage",
+        "link": "http://blog.gc.com/post/37191737580/effective-field-goal-percentage-and-true-shooting#TS%25",
+        "format": "triple-dec"
+      },
+      {
+        "key": "PTS",
+        "abbrev": "PTS",
+        "description": "Points Scored",
+        "format": "int"
+      },
+      {
+        "key": "2PA",
+        "abbrev": "2PA",
+        "description": "2-Point Attempts",
+        "format": "int"
+      },
+      {
+        "key": "2PM",
+        "abbrev": "2PM",
+        "description": "2-Point Shots Made",
+        "format": "int"
+      },
+      {
+        "key": "3PA",
+        "abbrev": "3PA",
+        "description": "3-Point Attempts",
+        "format": "int"
+      },
+      {
+        "key": "3PM",
+        "abbrev": "3PM",
+        "description": "3-Point Shots Made",
+        "format": "int"
+      },
+      {
+        "key": "3P/FGA",
+        "abbrev": "3P/FGA",
+        "description": "3-Point Shots Made per Field Goal Attempt",
+        "format": "triple-dec"
+      },
+      {
+        "key": "FG%",
+        "abbrev": "FG%",
+        "description": "Field Goal Percentage",
+        "format": "triple-dec"
+      },
+      {
+        "key": "FGA",
+        "abbrev": "FGA",
+        "description": "Field Goal Attempts",
+        "format": "int"
+      },
+      {
+        "key": "FGM",
+        "abbrev": "FGM",
+        "description": "Field Goals Made",
+        "format": "int"
+      },
+      {
+        "key": "FTA",
+        "abbrev": "FTA",
+        "description": "Free Throw Attempts",
+        "format": "int"
+      },
+      {
+        "key": "FTM",
+        "abbrev": "FTM",
+        "description": "Free Throws Made",
+        "format": "int"
+      },
+      {
+        "key": "FTA/FGA",
+        "abbrev": "FTA/FGA",
+        "description": "Free Throws Attempted per Field Goal Attempt",
+        "format": "triple-dec"
+      },
+      {
+        "key": "PPG",
+        "abbrev": "PPG",
+        "description": "Points per Game",
+        "format": "dec"
+      },
+      {
+        "key": "2AG",
+        "abbrev": "2AG",
+        "description": "2-Point Attempts per Game",
+        "format": "dec"
+      },
+      {
+        "key": "3AG",
+        "abbrev": "3AG",
+        "description": "3-Point Attempts per Game",
+        "format": "dec"
+      },
+      {
+        "key": "2MG",
+        "abbrev": "2MG",
+        "description": "2-Points Shots Made per Game",
+        "format": "dec"
+      },
+      {
+        "key": "3MG",
+        "abbrev": "3MG",
+        "description": "3-Points Shots Made per Game",
+        "format": "dec"
+      },
+      {
+        "key": "TOV",
+        "abbrev": "TO",
+        "description": "Turnovers Committed",
+        "format": "int"
+      },
+      {
+        "key": "TOPG",
+        "abbrev": "TOPG",
+        "description": "Turnovers Committed per Game",
+        "format": "dec"
+      },
+      {
+        "key": "FGAG",
+        "abbrev": "FGAG",
+        "description": "Field Goal Attempts per Game",
+        "format": "dec"
+      },
+      {
+        "key": "FTAG",
+        "abbrev": "FTAG",
+        "description": "Free Throw Attempts per Game",
+        "format": "dec"
+      },
+      {
+        "key": "FGMG",
+        "abbrev": "FGMG",
+        "description": "Field Goals Made per Game",
+        "format": "dec"
+      },
+      {
+        "key": "FTMG",
+        "abbrev": "FTMG",
+        "description": "Free Throws Made per Game",
+        "format": "dec"
+      },
+      {
+        "key": "REB",
+        "abbrev": "OR",
+        "description": "Offensive Rebounds",
+        "format": "int"
+      },
+      {
+        "key": "RPG",
+        "abbrev": "ORPG",
+        "description": "Offensive Rebounds per Game",
+        "format": "dec"
+      },
+      {
+        "key": "AST",
+        "abbrev": "AST",
+        "description": "Assists",
+        "format": "int"
+      },
+      {
+        "key": "APG",
+        "abbrev": "APG",
+        "description": "Assists per Game",
+        "format": "dec"
+      },
+      {
+        "key": "A/TO",
+        "abbrev": "A/TO",
+        "description": "Assists per Turnover",
+        "format": "dec"
+      },
+      {
+        "key": "STL",
+        "abbrev": "STL",
+        "description": "Steals",
+        "format": "int"
+      },
+      {
+        "key": "STLPG",
+        "abbrev": "SPG",
+        "description": "Steals per Game",
+        "format": "dec"
+      },
+      {
+        "key": "BLK",
+        "abbrev": "BA",
+        "description": "Own shots blocked",
+        "format": "int"
+      },
+      {
+        "key": "BLKPG",
+        "abbrev": "BAPG",
+        "description": "Own shots blocked per Game",
+        "format": "dec"
+      },
+      {
+        "key": "PIP",
+        "abbrev": "PIP",
+        "description": "Points in Paint",
+        "format": "int"
+      },
+      {
+        "key": "2CP",
+        "abbrev": "2CP",
+        "description": "Second Chance Points",
+        "format": "int"
+      },
+      {
+        "key": "POT",
+        "abbrev": "POT",
+        "description": "Points off Turnovers",
+        "format": "int"
+      }
+    ],
+    "defense": [
+      {
+        "key": "REB",
+        "abbrev": "DR",
+        "description": "Defensive Rebounds",
+        "format": "int"
+      },
+      {
+        "key": "RPG",
+        "abbrev": "DRPG",
+        "description": "Defensive Rebounds per Game",
+        "format": "dec"
+      },
+      {
+        "key": "STL",
+        "abbrev": "STL",
+        "description": "Steals",
+        "format": "int"
+      },
+      {
+        "key": "STLPG",
+        "abbrev": "SPG",
+        "description": "Steals per Game",
+        "format": "dec"
+      },
+      {
+        "key": "BLK",
+        "abbrev": "BL",
+        "description": "Blocks",
+        "format": "int"
+      },
+      {
+        "key": "BLKPG",
+        "abbrev": "BPG",
+        "description": "Blocks per Game",
+        "format": "dec"
+      }
+    ],
+    "general": [
+      {
+        "key": "G",
+        "abbrev": "G",
+        "description": "Games Played",
+        "format": "int",
+        "playedKey": true
+      },
+      {
+        "key": "ODF",
+        "abbrev": "ODF",
+        "description": "Offensive and Defensive Fouls",
+        "format": "int"
+      },
+      {
+        "key": "TLF",
+        "abbrev": "TF",
+        "description": "Technical Fouls",
+        "format": "int"
+      },
+      {
+        "key": "FLF",
+        "abbrev": "FF",
+        "description": "Flagrant Fouls",
+        "format": "int"
+      },
+      {
+        "key": "PF",
+        "abbrev": "PF",
+        "description": "Personal Fouls",
+        "format": "int"
+      },
+      {
+        "key": "ODFPG",
+        "abbrev": "ODFPG",
+        "description": "Offensive and Defensive Fouls per Game",
+        "format": "dec"
+      },
+      {
+        "key": "TLFPG",
+        "abbrev": "TFPG",
+        "description": "Technical Fouls per Game",
+        "format": "dec"
+      },
+      {
+        "key": "FLFPG",
+        "abbrev": "FFPG",
+        "description": "Flagrant Fouls per Game",
+        "format": "dec"
+      },
+      {
+        "key": "PFPG",
+        "abbrev": "PFPG",
+        "description": "Personal Fouls per Game",
+        "format": "dec"
+      },
+      {
+        "key": "REB",
+        "abbrev": "TR",
+        "description": "Total Rebounds",
+        "format": "int"
+      },
+      {
+        "key": "RPG",
+        "abbrev": "RPG",
+        "description": "Rebounds per Game",
+        "format": "dec"
+      },
+      {
+        "key": "TRBD",
+        "abbrev": "REB",
+        "description": "Total Rebounds",
+        "format": "int"
+      },
+      {
+        "key": "ORBD",
+        "abbrev": "OREB",
+        "description": "Offensive Rebounds",
+        "format": "int"
+      },
+      {
+        "key": "DRBD",
+        "abbrev": "DREB",
+        "description": "Defensive Rebounds",
+        "format": "int"
+      }
+    ]
+  }
+}

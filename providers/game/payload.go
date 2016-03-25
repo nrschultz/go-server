@@ -19,35 +19,39 @@ type Totals struct {
 }
 
 type GameJsonPayload struct {
-    Players             []PlayerRowPayload      `json:"players"`
-    AdditionalPlayers   []PlayerRowPayload      `json:"additional_players"`
-    Totals              Totals                  `json:"totals"`
-    Glossary            []shared.GlossaryEntry  `json:"glossary"`
+    Players             []PlayerRowPayload              `json:"players"`
+    AdditionalPlayers   []PlayerRowPayload              `json:"additional_players"`
+    Totals              Totals                          `json:"totals"`
+    Glossary            []shared.PayloadGlossaryEntry   `json:"glossary"`
 }
 
-func buildPlayerPayload(player shared.CategorizedStats, statsRequested []shared.StatIdentifier) PlayerRowPayload {
+func buildPlayerPayload(rosterPlayer shared.RosterPlayer, playerStats shared.CategorizedStats, statsRequested []shared.StatIdentifier, glossary []shared.PayloadGlossaryEntry) PlayerRowPayload {
     playerPayload := PlayerRowPayload{}
-    playerPayload.RowInfo = PlayerRowInfo{JerseyNumber: "8", Id: player.Id, Name: "Nick Schultz"}
-    playerPayload.Stats = shared.BuildStatList(player, statsRequested)
+    playerPayload.RowInfo = PlayerRowInfo{JerseyNumber: rosterPlayer.Number, Id: playerStats.Id, Name: rosterPlayer.FullName()}
+    playerPayload.Stats = shared.BuildStatList(playerStats, statsRequested, glossary)
     return playerPayload
 }
 
 func (account GameAccount) TransformToPayload(teamId bson.ObjectId, qualifyingStat shared.StatIdentifier, statsRequested []shared.StatIdentifier) GameJsonPayload {
     payload := GameJsonPayload{}
     payload.Players = []PlayerRowPayload{}
-    for playerIndex := range account.Stats.Player {
-        player := account.Stats.Player[playerIndex]
-        if player.GetStatValue(qualifyingStat) > 0 {
-            playerPayload := buildPlayerPayload(player, statsRequested)
+    payload.Glossary = shared.GetGlossary(statsRequested)
+    team := shared.LookupTeam(teamId)
+
+    for _, playerStats := range account.Stats.Player {
+        if team.HasPlayer(playerStats.Id) && playerStats.GetStatValue(qualifyingStat) > 0 {
+            rosterPlayer, _ := team.GetPlayer(playerStats.Id)
+            playerPayload := buildPlayerPayload(rosterPlayer, playerStats, statsRequested, payload.Glossary)
             payload.Players = append(payload.Players, playerPayload)
         }
     }
-    for teamIndex := range account.Stats.Team {
-        team := account.Stats.Team[teamIndex]
+    for _, team := range account.Stats.Team {
         if team.Id == teamId {
-            payload.Totals = Totals{Stats: shared.BuildStatList(team, statsRequested)}
+            payload.Totals = Totals{Stats: shared.BuildStatList(team, statsRequested, payload.Glossary)}
             break
         }
     }
+
+
     return payload
 }
